@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="../resources/Img/PolyU.png">
+    <title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="../resources/UserLogin/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../resources/UserLogin/css/main.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" href="../resources/css/toggle.css">
+
+<script src='../resources/toastr/jquery.min.js'></script>
+<link href='../resources/toastr/toastr.min.css' rel='stylesheet' type='text/css' />
+<script src='../resources/toastr/toastr.min.js'></script>
+<script src="../js/popup.js">
+
+</script>
+
+
+</head>
+<body>
+	<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="circle"></div>
+    </div>
+</div>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('../resources/Img/loseWallet.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="../php/Login.php" method="post">
+					<span class="login100-form-logo">
+                        <image src="../resources/Img/PolyU.png" style="width:70%">
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Log in
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter User ID">
+						<input class="input100" type="text" name="UserID" placeholder="User ID">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="Password" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+
+
+                    <div class="wrapper" style="margin-bottom:30px">
+						<input type="radio" name="role" value="user" id="option-1" checked>
+						<input type="radio" name="role" value="admin" id="option-2">
+						<label for="option-1" class="option option-1">
+							<div class="dot"></div>
+							<span style="margin-left:8px;">User</span>
+							</label>
+						<label for="option-2" class="option option-2">
+							<div class="dot"></div>
+							<span style="margin-left:8px;">Admin</span>
+						</label>
+					</div>
+
+
+					<div class="container-login100-form-btn">
+						<button type="submit" class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-90">
+						<a class="txt1" href="../html/Forgetpassword.html">
+							Forgot/Reset Password
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	
+<!--===============================================================================================-->
+	<script src="../resources/UserLogin/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../resources/UserLogin/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../resources/UserLogin/vendor/bootstrap/js/popper.js"></script>
+	<script src="../resources/UserLogin/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../resources/UserLogin/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../resources/UserLogin/vendor/daterangepicker/moment.min.js"></script>
+	<script src="../resources/UserLogin/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="../resources/UserLogin/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="../resources/UserLogin/js/main.js"></script>
+
+
+
+
+<script src="../resources/CodeSeven-toastr-2.1.4-7-g50092cc/CodeSeven-toastr-50092cc/build/toastr.min.js"></script>
+
+</body>
+</html>

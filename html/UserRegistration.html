@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Registration</title>
+	<!-- main style -->
+	<link rel="stylesheet" href="../resources/css/loader.css">
+    <link rel="stylesheet" href="../resources/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../resources/css/UserRegistrationStyle.css">
+    <style>
+        #Gender {
+                    z-index: 99;
+                            }
+        #Gender {
+            margin-bottom: 30px;
+        }
+    </style>
+<!-- pop up window -->
+<script src='../resources/toastr/jquery.min.js'></script>
+<link href='../resources/toastr/toastr.min.css' rel='stylesheet' type='text/css' />
+<script src='../resources/toastr/toastr.min.js'></script>
+<script src="../js/popup.js"></script>
+<!-- pop up window -->
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <form action="../php/UserRegistration.php" method="post" class="appointment-form" id="appointment-form" enctype ="multipart/form-data">
+                <h2>Registration information</h2>
+                <div class="form-group-1">
+                    <h3>Account Information</h3>
+                    <input type="text" name="UserID"  placeholder="User id" required oninvalid="setCustomValidity('Your user ID is required!')" oninput="setCustomValidity('')"/>
+                    <input type="password" name="Password" placeholder="Your password" required oninvalid="setCustomValidity('Your password is required!')" oninput="setCustomValidity('')"> 
+                    <input type="text" name="NickName"  placeholder="Nick name" required oninvalid="setCustomValidity('Your nick name is required!')" oninput="setCustomValidity('')"/>
+                </div>
+                <div class="form-group-2">
+                    <h3>Personal Information</h3>
+                    <div class="select-list">
+                        <select name="Gender" id="Gender" required oninvalid="setCustomValidity('You have to select your gender!')" oninput="setCustomValidity('')">
+                            <option disabled="disabled" >Select your gender...</option>
+                            <option>Male</option><option>Female</option>
+                            <input type="hidden" id="GenderVal" name="GenderVal" />
+                        </select>
+                    </div>
+                    <input type="email" name="Email"  placeholder="Email" required  oninvalid="setCustomValidity('Please provide a valid email!')" oninput="setCustomValidity('')"/>
+                    <label style="color:black;">Birthday:</label><input type="date" name ="Birthday" required oninvalid="setCustomValidity('Please choose your birthday!')" oninput="setCustomValidity('')">
+                    <label style="color:black;">Image profile:</label><input id="file" type="file" name="file" required oninvalid="setCustomValidity('Please upload a profile!')" oninput="setCustomValidity('')" >
+                    <img id="image">
+                </div>
+                <div class="form-submit">
+                    <input type="submit" class="submit" value="Create New User" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script src="../resources/js/jquery-1.11.3.min.js"></script>
+<script src="../resources/js/UserRegistrationMain.js"></script>
+<script src="../js/UserRegistration.js"></script>
+<script src="../resources/js/main.js"></script>
